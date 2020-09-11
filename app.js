@@ -24,6 +24,7 @@ document.addEventListener('scroll', () => {
 		header.style.backgroundColor = 'transparent';
 	}
 
+
 });
 
 menu_item.forEach((item) => {
@@ -32,6 +33,7 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
 
 if (scrollHeight > 500) {
 	console.log("helo");
