@@ -2,6 +2,14 @@ const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger'
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
+const topLink = document.querySelector(".top-link");
+const scrollHeight = window.pageYOffset;
+const date = document.querySelector('.date');
+
+
+// footer date
+date.textContent = new Date().getFullYear();
+
 
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('active');
@@ -15,6 +23,7 @@ document.addEventListener('scroll', () => {
 	} else {
 		header.style.backgroundColor = 'transparent';
 	}
+
 });
 
 menu_item.forEach((item) => {
@@ -23,3 +32,11 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+if (scrollHeight > 500) {
+	console.log("helo");
+
+	topLink.classList.add("show-link");
+} else {
+	topLink.classList.remove("show-link");
+}
