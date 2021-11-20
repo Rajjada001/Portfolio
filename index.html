@@ -1,319 +1,818 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/rj-icon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
-      crossorigin="anonymous"
-    />
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8" />
     <title>RJ Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="favicon3.png" />
   </head>
 
-  <body>
-    <!-- Header -->
-    <section id="header">
-      <div class="header container">
-        <div class="nav-bar">
-          <div class="brand">
-            <a href="#hero">
-              <h1><span>R</span>aj <span>J</span>ada</h1>
-            </a>
+  <body id="top">
+    <!-- header 
+   ================================================== -->
+    <!-- header 
+   ================================================== -->
+    <header>
+      <div class="row">
+        <div class="top-bar">
+          <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+          <div class="logo">
+            <a href="index.html">RJ</a>
           </div>
-          <div class="nav-list">
-            <div class="hamburger">
-              <div class="bar"></div>
-            </div>
-            <ul>
-              <li><a href="#hero" data-after="Home">Home</a></li>
-              <li><a href="#services" data-after="Service">Services</a></li>
-              <li><a href="#projects" data-after="Projects">Projects</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <li><a href="#contact" data-after="Contact">Contact</a></li>
+
+          <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+              <li class="current">
+                <a class="smoothscroll" href="#intro" title="">Home</a>
+              </li>
+              <li><a class="smoothscroll" href="#about" title="">About</a></li>
+              <li>
+                <a class="smoothscroll" href="#resume" title="">Resume</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#portfolio" title="">Portfolio</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#services" title="">Services</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#contact" title="">Contact</a>
+              </li>
+              <!-- <li><a href="styles.html" title="">Style Demo</a></li> -->
             </ul>
+          </nav>
+        </div>
+        <!-- /top-bar -->
+      </div>
+      <!-- /row -->
+    </header>
+    <!-- /header -->
+
+    <!-- intro section
+ ================================================== -->
+    <section id="intro">
+      <div class="intro-overlay"></div>
+
+      <div class="intro-content">
+        <div class="row">
+          <div class="col-twelve">
+            <h5>Hello!</h5>
+            <h1>I'm Nagaraju Jada.</h1>
+
+            <p class="intro-position">
+              <span>Web Developer</span>
+              <span>Data Analyst</span>
+            </p>
+
+            <a class="button stroke smoothscroll" href="#about" title=""
+              >More About Me</a
+            >
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Header -->
+      <!-- /intro-content -->
 
-    <!-- Hero Section  -->
-    <section id="hero">
-      <div class="hero container">
-        <div>
-          <h1>Hello, <span></span></h1>
-          <h1>My Name is <span></span></h1>
-          <h1>Raj <span></span></h1>
-          <a href="#projects" type="button" class="cta">Portfolio</a>
-        </div>
-      </div>
+      <ul class="intro-social">
+        <li>
+          <a href="https://www.linkedin.com/in/nagaraju-jada-897819195/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Raj_8055_"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Rajjada001"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/raj_jada_/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <!-- /intro-social -->
     </section>
-    <!-- End Hero Section  -->
+    <!-- /intro -->
 
-    <!-- Service Section -->
-    <section id="services">
-      <div class="services container">
-        <div class="service-top">
-          <h1 class="section-title">Serv<span>i</span>ces</h1>
-        </div>
-        <div class="service-bottom">
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/services.png"
-              />
-            </div>
-            <h2>Front-End</h2>
-            <p>
-              Front-end development, also known as client-side development is
-              the practice of producing HTML, CSS and JS libraries/framworks
-              include Angular, React and Gatsby.js for a website so that a user
-              can see and interact with them.
-            </p>
-          </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/services.png"
-              />
-            </div>
-            <h2>Back-End</h2>
-            <p>
-              Able to work with the servers, DBMS, ability to work with multiple
-              programming languages and develop several ML algorithms using
-              Python, can also make use of APIs. In addition, can solve complex
-              Algorithms and Data Structures.
-            </p>
-          </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/services.png"
-              />
-            </div>
-            <h2>Cloud and Database</h2>
-            <p>
-              Proficient with the MySQL, PostgreSQL, achieved 5-star for the
-              HackerRank MySQL problems. Familiar with several AWS Services such
-              as EC2, S3, DynamoDB, write the server-side scripts using the
-              Lambda functions.
-            </p>
-          </div>
-          <div class="service-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/services.png"
-              />
-            </div>
-            <h2>ML Models and Data Visualization</h2>
-            <p>
-              Can comfortably work with various Machine Learning Algotihms, Deep
-              Learning models. Able to visualize the data using Python libraries
-              such as Pandas, Numpy, Matplotlib and Scikit-Learn.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Service Section -->
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="projects container">
-        <div class="projects-header">
-          <h1 class="section-title">Recent <span>Projects</span></h1>
-        </div>
-        <div class="all-projects">
-          <div class="project-item">
-            <div class="project-info">
-              <h1>SENTIMENT ANALYSIS</h1>
-              <h2>AMAZON PRODUCT REVIEW</h2>
-              <p>
-                Applied sentiment analysis on Amazon Review Data to analyse the
-                good and bad rated products. We quantifies the sentiment with a
-                positive or negative value, called polarity whereas Subjectivity
-                is used for individual sentences to determine whether a sentence
-                expresses an opinion or not. I have made use of NTTK-WordNet,
-                several Python Libraries such as Numpy, Pandas, Matplotlib,
-                Scikit-learn for the classification and Visualization.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>SALARY PREDICTION USING MACHINE LEARNING</h1>
-              <!-- <h2>
-                A chatbot to know the details of the weather at any location.
-              </h2> -->
-              <p>
-                Developed a webapp to predict and visualize the Salary based on
-                the Country and Experience; took the dataset from the
-                StackOverflow 2020 Survey for Software Engineer role. I have
-                used Decision Tree and Linear Regression algorithms to test and
-                train the data. It calculates the approximated salary based on
-                Country, Education level and Experience(in years). I used
-                Python, Streamlit and several libraries include Pandas, Numpy,
-                Matplotlib and Scikit-learn for the Data Visualization.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>FREELANCING</h1>
-              <h2>Visualize the daily corona cases across the globe</h2>
-              <p>
-                Buill an E-commerce platform for a client to their Botique. It
-                is completely customized eCommerce application from scratch with
-                the MERN stack with a full-fledged shopping cart, checkout
-                system. I have integrated the PayPal API for the payments,
-                rating system, Admin panel, custom Database seeder script.
-                Technologies include HTML, CSS, Bootstrap, Vanilla JavaScript,
-                React, Redux, Express, MongoDB, Node.js and several APIs such as
-                PayPal and RazorPay.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-          <div class="project-item">
-            <div class="project-info">
-              <h1>AUTOMATIC PERSONALITY PREDICTION</h1>
-              <h2>
-                Predicts the personality of the user using Machine Learning.
-              </h2>
-              <p>
-                A Django-JavaScript based project which classifies the what kind
-                of person he/she is based on the choices that were chosen in a
-                particular quiz. Created a Quiz where a end-user participates,
-                allows the user the select the choices for the available 30
-                questions. Convoluted Neural Networks and Logistic Regression to
-                train the Machine Learning Data Model.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Projects Section -->
-
-    <!-- About Section -->
+    <!-- about section
+ ================================================== -->
     <section id="about">
-      <div class="about container">
-        <div class="col-left">
-          <div class="about-img">
-            <img src="./img/profile.png" alt="img" />
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>About</h5>
+          <h1>Let me introduce myself.</h1>
+
+          <div class="intro-info">
+            <img src="images/profile.png" alt="Profile Picture" />
+
+            <p class="lead">
+              Ability to create innovative, creative, & interactive web designs
+              to boost customer engagement. Sound knowledge in HTML5, JQuery,
+              React.js, & other UI frameworks. Build reusable code for future
+              use while optimizing web performance.
+            </p>
           </div>
         </div>
-        <div class="col-right">
-          <h1 class="section-title">About <span>me</span></h1>
-          <h2>Web Developer</h2>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profile</h3>
+
+          <ul class="info-list">
+            <li>
+              <strong>Fullname:</strong>
+              <span>Nagaraju Jada</span>
+            </li>
+            <li>
+              <strong>Birth Date:</strong>
+              <span>February 4, 1999</span>
+            </li>
+            <li>
+              <strong>Job:</strong>
+              <span>Software Developer, Digital Interactive Advisor</span>
+            </li>
+
+            <li>
+              <strong>Email:</strong>
+              <span>Rajjada001@gmail.com</span>
+            </li>
+          </ul>
+          <!-- /info-list -->
+        </div>
+
+        <div class="col-six tab-full">
+          <h3>Skills</h3>
           <p>
-            Ability to create innovative, creative, & interactive web designs to
-            boost customer engagement. Sound knowledge in HTML5, JQuery,
-            React.js, & other UI frameworks. Build reusable code for future use
-            while optimizing web performance.
+            Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse
+            in magna sint minim officia consectetur nisi commodo ea magna
+            pariatur nisi cillum.
           </p>
+
+          <ul class="skill-bars">
+            <li>
+              <div class="progress percent90"><span>90%</span></div>
+              <strong>Python</strong>
+            </li>
+            <li>
+              <div class="progress percent85"><span>85%</span></div>
+              <strong>Java</strong>
+            </li>
+            <li>
+              <div class="progress percent85"><span>85%</span></div>
+              <strong>Data Analysis</strong>
+            </li>
+            <li>
+              <div class="progress percent95"><span>95%</span></div>
+              <strong>HTML+CSS+JavaScript</strong>
+            </li>
+            <li>
+              <div class="progress percent70"><span>75%</span></div>
+              <strong>AWS</strong>
+            </li>
+            <li>
+              <div class="progress percent80"><span>80%</span></div>
+              <strong>Machine Learning Models</strong>
+            </li>
+          </ul>
+          <!-- /skill-bars -->
+        </div>
+      </div>
+
+      <div class="row button-section">
+        <div class="col-twelve">
           <a
             href="https://resume-portfolio-rj.s3.us-east-2.amazonaws.com/Nagaraju_Jada.pdf"
-            class="cta"
             target="_blank"
-            >Download Resume</a
+            title="Download CV"
+            class="button button-primary"
+            >Download CV</a
           >
         </div>
       </div>
     </section>
-    <!-- End About Section -->
+    <!-- /process-->
 
-    <!-- Contact Section -->
+    <!-- resume Section
+   ================================================== -->
+    <section id="resume" class="grey-section">
+      <!-- /section-intro-->
+
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2>Work Experience</h2>
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>[24]7.ai</h3>
+                <p>FEB 2021 - Present</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Software Development Engineer I</h4>
+                <p>
+                  Inquisitive, hard-working computerscience graduate skilled in
+                  leadership,with a strong foundation in math,programming logic,
+                  and cross-platformcoding. I am seeking to leverage solidweb
+                  development skills focusing oncollaboration, passion, and
+                  creativityas a programmer.
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <!-- /timeline-block -->
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2>Education</h2>
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Bachelor Degree</h3>
+                <p>AUG 2016 - AUG 2020</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>CVR College of Engineering</h4>
+                <p>GPA — 8.13</p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>High School</h3>
+                <p>JUN 2014 - APR 2016</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Narayana Junior College</h4>
+                <p>Percentage: 88</p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+    </section>
+    <!-- /features -->
+
+    <!-- Portfolio Section
+   ================================================== -->
+    <section id="portfolio">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Portfolio</h5>
+          <h1>Check Out Some of My Works.</h1>
+
+          <!-- <p class="lead">
+            Lorem ipsum Do commodo in proident enim in dolor cupidatat
+            adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
+            ipsum Consectetur ut in in eu do.
+          </p> -->
+        </div>
+      </div>
+      <!-- /section-intro-->
+
+      <div class="row portfolio-content">
+        <div class="col-twelve">
+          <!-- portfolio-wrapper -->
+          <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/sos.jpg" alt="SOS" />
+                <a href="#modal-01" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Emergency Notification</h3>
+                      <span class="folio-types"> Android App </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/covid-world.jpg" alt="Covid" />
+                <a href="#modal-02" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Covid Data Visualization</h3>
+                      <span class="folio-types"> Machine Learning </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img
+                  src="images/portfolio/salary-estimation.jpg"
+                  alt="Salary estimation"
+                />
+                <a href="#modal-03" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Estimation of Student Salary</h3>
+                      <span class="folio-types"> Machine Learning </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/personality.jpg" alt="Beetle" />
+                <a href="#modal-04" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Personality Classification</h3>
+                      <span class="folio-types"> Web Development </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img
+                  src="images/portfolio/face-recognition.jpg"
+                  alt="Lighthouse"
+                />
+                <a href="#modal-05" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Face and Emotion Detection</h3>
+                      <span class="folio-types">
+                        Artificial Intelligence/Machine Learning
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/eCommerce.jpg" alt="Ecommerce" />
+                <a href="#modal-06" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">eCommerce</h3>
+                      <span class="folio-types">
+                        MERN STACK | Web Development
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <!-- modal popups - begin
+	            ============================================================= -->
+            <div id="modal-01" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/sos.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Emergency Notification</h4>
+                <p>
+                  Emergency Notification Transmitting Mobile Application for
+                  Women Safety sends an SOS message to saved contacts.
+                </p>
+
+                <div class="categories">Android Development</div>
+              </div>
+
+              <div class="link-box">
+                <a href="https://github.com/Rajjada001/SOS">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-01 -->
+
+            <div id="modal-02" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/covid-world.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Covid Data Visualization</h4>
+                <p>
+                  This is used to display Daily Corona Cases across the Globe
+                  using Python libraries and Kaggle Dataset.
+                </p>
+
+                <div class="categories">Data Visualization</div>
+              </div>
+
+              <div class="link-box">
+                <a
+                  href="https://github.com/Rajjada001/Daily-Covid19-Cases-visualization"
+                  >Details</a
+                >
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-02 -->
+
+            <div id="modal-03" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/salary-estimation.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Student Salary Estimation</h4>
+                <p>
+                  This is a web app to predict and visualize the salary based on
+                  the Country and Experience.
+                </p>
+
+                <div class="categories">Machine Learning</div>
+              </div>
+
+              <div class="link-box">
+                <a
+                  href="https://github.com/Rajjada001/Salary-Prediction-using-Python-and-ML"
+                  >Details</a
+                >
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-03 -->
+
+            <div id="modal-04" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/personality.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Automatic Personality Prediction</h4>
+                <p>
+                  A Django-JavaScript-based project classifies what kind of
+                  person they are based on the choices in a particular
+                  quiz—created a Quiz where an end-user participates, allowing
+                  the user the select the options for the available 30
+                  questions—convoluted Neural Networks and Logistic Regression
+                  to train the Machine Learning Data Model.
+                </p>
+
+                <div class="categories">Web Development</div>
+              </div>
+
+              <div class="link-box">
+                <a
+                  href="https://github.com/Rajjada001/Automatic-Personality-Prediction-Part-2"
+                  >Details</a
+                >
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-04 -->
+
+            <div id="modal-05" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/face-recognition.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Face and Emotion Recognition</h4>
+                <p>
+                  Face Recognition command line application, that recognises
+                  your face with emotions about 95% accuracy.
+                </p>
+
+                <div class="categories">Artificial Intelligence</div>
+              </div>
+
+              <div class="link-box">
+                <a href="#">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-05 -->
+
+            <div id="modal-06" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/eCommerce.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Salad</h4>
+                <p>
+                  MERN Stack eCommerce application for the with the admin panel
+                  and real-time payment system.
+                </p>
+
+                <div class="categories">MERN Stack | Web Development</div>
+              </div>
+
+              <div class="link-box">
+                <a href="https://github.com/Rajjada001/ProShop">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-06 -->
+
+            <!-- modal popups - end
+	            ============================================================= -->
+          </div>
+          <!-- /portfolio-wrapper -->
+        </div>
+        <!-- /twelve -->
+      </div>
+      <!-- /portfolio-content -->
+    </section>
+    <!-- /portfolio -->
+
+    <!-- CTA Section
+   ================================================== -->
+
+    <!-- /cta -->
+
+    <!-- services Section
+   ================================================== -->
+    <section id="services">
+      <div class="overlay"></div>
+
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Services</h5>
+          <h1>What Can I Do For You?</h1>
+
+          <!-- <p class="lead">
+            Lorem ipsum Do commodo in proident enim in dolor cupidatat
+            adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
+            ipsum Consectetur ut in in eu do.
+          </p> -->
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row services-content">
+        <div id="owl-slider" class="owl-carousel services-list">
+          <div class="service">
+            <span class="icon"><i class="icon-earth"></i></span>
+
+            <div class="service-content">
+              <h3>Webdesign</h3>
+
+              <p class="desc">
+                Front-end development, also known as client-side development is
+                the practice of producing HTML, CSS and JS libraries/framworks
+                include Angular, React and Gatsby.js for a website so that a
+                user can see and interact with them.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-window"></i></span>
+
+            <div class="service-content">
+              <h3>Web Development</h3>
+
+              <p class="desc">
+                Able to work with the servers, DBMS, ability to work with
+                multiple programming languages and develop several ML algorithms
+                using Python, can also make use of APIs. In addition, can solve
+                complex Algorithms and Data Structures.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-toggles"></i></span>
+
+            <div class="service-content">
+              <h3>UI/UX Design</h3>
+
+              <p class="desc">
+                Able to demonstrate all stages of UI/UX development process,
+                from user research to defining a project's strategy, scope, and
+                information architecture, to developing sitemaps and wireframes.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-image"></i></span>
+
+            <div class="service-content">
+              <h3>Cloud Computing</h3>
+
+              <p class="desc">
+                Proficient with the MySQL, PostgreSQL, achieved 5-star for the
+                HackerRank MySQL problems. Familiar with several AWS Services
+                such as EC2, S3, DynamoDB, write the server-side scripts using
+                the Lambda functions.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <span class="icon"><i class="icon-chat"></i></span>
+
+            <div class="service-content">
+              <h3>ML MODELS AND DATA VISUALIZATION</h3>
+
+              <p class="desc">
+                Can comfortably work with various Machine Learning Algotihms,
+                Deep Learning models. Able to visualize the data using Python
+                libraries such as Pandas, Numpy, Matplotlib and Scikit-Learn.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+        </div>
+        <!-- /services-list -->
+      </div>
+      <!-- /services-content -->
+    </section>
+    <!-- /services -->
     <section id="contact">
-      <div class="contact container">
-        <div>
-          <h1 class="section-title">Contact <span>info</span></h1>
+      <div class="row contact-info">
+        <div class="col-four tab-full">
+          <div class="icon">
+            <i class="icon-pin"></i>
+          </div>
+
+          <h5>Where to find me</h5>
+
+          <p>
+            Plot No:4 Road Number 3<br />
+            Boduppal, Hyderabad<br />
+            500092 IN
+          </p>
         </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="icon">
-              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
-            </div>
-            <div class="contact-info">
-              <h1>Phone</h1>
-              <h2>+91 9912883656</h2>
-              <!-- <h2>+91</h2> -->
-            </div>
+
+        <div class="col-four tab-full collapse">
+          <div class="icon">
+            <i class="icon-mail"></i>
           </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Email</h1>
-              <a href="mailto:Rajjada001@gmail.com" class="mail-link"
-                ><h2>Rajjada001@gmail.com</h2></a
-              >
-            </div>
+
+          <h5>Email Me At</h5>
+
+          <a href="mailto:Rajjada001@gmail.com" style="color: #d2d2d2">
+            Rajjada001@gmail.com<br />
+          </a>
+        </div>
+
+        <div class="col-four tab-full">
+          <div class="icon">
+            <i class="icon-phone"></i>
           </div>
+
+          <h5>Call Me At</h5>
+
+          <p>Phone: (+91) 9912883656<br /></p>
         </div>
       </div>
+      <!-- /contact-info -->
     </section>
-    <!-- End Contact Section -->
+    <!-- /contact -->
 
-    <!-- back to the top -->
+    <!-- footer
+   ================================================== -->
 
-    <a href="#hero" class="scroll-link top-link">
-      <i class="fas fa-arrow-alt-circle-up"></i>
-    </a>
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h1><span>R</span>aj <span>J</span>ada</h1>
+    <footer id="#footer">
+      <div class="row">
+        <div class="col-six tab-full pull-right social">
+          <ul class="footer-social">
+            <!-- <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li> -->
+            <li>
+              <a href="https://github.com/Rajjada001"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nagaraju-jada-897819195/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Raj_8055_"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/raj_jada_/?hl=en"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <h2>Contact me on Social medias</h2>
-        <div class="social-icons">
-          <div class="social-item linkedin">
-            <a
-              href="https://www.linkedin.com/in/nagaraju-jada-897819195/"
-              target="_blank"
-              ><img src="img/linkedin.png"
-            /></a>
-          </div>
-          <div class="social-item github">
-            <a href="https://github.com/Rajjada001" target="_blank"
-              ><img src="img/github.png"
-            /></a>
-          </div>
-          <div class="social-item twitter">
-            <a href="https://twitter.com/Raj_8055_" target="_blank"
-              ><img src="img/twitter.png"
-            /></a>
-          </div>
-          <div class="social-item">
-            <a href="https://www.instagram.com/raj_jada_/" target="_blank"
-              ><img src="img/instagram.png"
-            /></a>
+
+        <div class="col-eight tab-full">
+          <div class="copyright">
+            <p>
+              Copy right © <span class="date"></span> Raj. All rights reserved.
+            </p>
           </div>
         </div>
-        <p>Copyright © <span class="date"></span> Raj. All rights reserved</p>
+
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"
+            ><i class="fa fa-long-arrow-up"></i
+          ></a>
+        </div>
       </div>
-    </section>
-    <!-- End Footer -->
-    <script src="./app.js"></script>
+      <!-- /row -->
+    </footer>
+
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
